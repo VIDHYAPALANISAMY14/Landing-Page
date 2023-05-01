@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="shortcut icon" type="image/x-icon" href="ass1top.jpg" />
+    <title>VividEdge</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body >
+
+    <style>
+        *{
+    /* padding: 0; */
+    margin: 0;
+}
+body{
+    /* background-image: linear-gradient(rgba(0,0,0,8),rgba(0,0,0,0.2)),url('ass1bglib.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px ridge pink;
+    border-style:ridge solid rgb(216, 20, 20);
+    background-color:antiquewhite;
+    overflow: hidden;
+}
+
+.head{
+    padding-top: 50px;
+    background-color: black;
+    height:30px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   /* justify-content: flex-end; */
+   color: white;
+ 
+}
+
+.head div{
+    display: flex;
+    padding-left:20px;
+    padding-left: 50px;
+    font-size: 32px;
+    justify-content: space-evenly;
+}
+nav {
+
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-right:30px ;
+}
+nav a{
+    padding-left:10px;
+    font-size: 20px;
+    color: aliceblue;
+   text-decoration: none;
+}
+.home_sec{
+    background-image: linear-gradient(rgba(0,0,0,8),rgba(0,0,0,0.2)),url('ass1bglib.jpg');
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 90px;
+    height:500px;
+}
+.top{
+    width: 80%;
+    display:block;
+    text-align: center;
+    font-size: 22px;
+    padding-top:20px;
+    padding-left:20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.top h1{
+    padding:30px;
+    font-size:50px;
+    color: aqua;
+}
+.top h4{
+    font-size: 32px;
+    padding-bottom: 20px;
+    color: rgb(233, 209, 174);
+}
+.top_btn{
+    width: 220px;
+    height:50px;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background:linear-gradient(rgb(2, 18, 240),rgb(2, 168, 233),rgb(55, 0, 255));
+    border-radius: 5px;
+}
+.top button{
+    margin-top: 50px;
+}
+.products{
+    padding: 20px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+}
+.coll_pro img{
+    width:100px;
+    height: 130px;
+}
+.products h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+}
+.coll_pro{
+    padding-top: 20px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 214, 127);
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px groove rgb(221, 128, 22);
+    color: rgb(10, 154, 250);
+    font-size: 28px;
+    font-weight: bolder;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.tot_coll{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: center;
+}
+.abt{
+    margin: 10px;
+    font-size: 20px;
+    /* width: 80%; */
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   padding-bottom: 20px;
+}
+.abt h1,p{
+    align-items: center;
+}
+.abt h1{
+    padding-bottom:40px;
+}
+footer {
+    padding-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(rgb(241, 142, 13),rgb(251, 121, 0),rgb(235, 98, 6));
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .in_form{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(235, 212, 176);
+  }
+  form span{
+    padding: 10px;
+  }
+  
+ .cnt_btn{
+    background-color: lightsalmon;
+    width:150px;
+    height:30px;
+    border-radius: 8px;
+    border:2px solid rgb(255, 187, 0);
+    font-size: 20px;
+  }
+  .cnt h1{
+   text-align: center;
+   font-size: 32px;
+   font-weight: bold;
+  }
+  .cnt{
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  footer{
+    padding-top: 18px;
+  }
+
+  @media(max-width:611px){
+    .head div{
+        display: flex;
+        padding-left:0px;
+        font-size: 22px;
+        flex-direction: column;
+    }
+    nav {
+    
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        padding-right:0px ;
+    }
+    nav a{
+        padding-left:0px;
+        font-size: 18px;
+        color: aliceblue;
+        display: flex;
+       text-decoration: none;
+       padding-left: 5px;
+    }
+   
+  }
+    </style>
+
+
+        <div class="head">
+            <div>
+                <img src="navbook1.jpg" alt="" width="50px"height="50px">
+                <h3>VividEdge</h3>
+            </div>
+            <nav>
+                <div ><a class="nav-link" >Home</a></div>
+                <div ><a class="nav-link" >Collections</a></div>
+                <div ><a class="nav-link" >About</a></div>
+                <div ><a class="nav-link" >Contact</a></div>
+            </nav>
+            
+            
+        </div>
+    
+    <section class="home_sec">
+        <div class="top">
+            <h4>Welcome to My Website</h4>
+            <h1 ><span class="logo">VividEdge</span></h1>
+            <h4 style="color: rgb(0, 0, 0);">Get the unlimited treasue to fill the brain!!!.</h4>
+            <button class="top_btn">Get Started</button>
+        </div>
+       
+    </section>
+    <section class="products">
+        <div class="pro">
+            <h2>Take the interesting Stacks!!!</h2>
+            <div class="tot_coll">
+                <div class="coll_pro">
+                    <img src="coll1.jpg">
+                    <h4>Read</h4>
+                </div>
+                <div class="coll_pro">
+                    <img src="coll2.jpg">
+                    <h4>Read</h4>
+                </div>
+                <div class="coll_pro">
+                    <img src="coll3.jpg">
+                    <h4>Read</h4>
+                </div>
+                <div class="coll_pro">
+                    <img src="coll4.jpg">
+                    <h4>Read</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="abt">
+            <h1>About Us</h1>
+            <p>Digital libraries provide users with online access to a wide range of resources. 
+            They are often used by students for research or by professionals seeking to stay current on the latest developments in their field.
+            Digital libraries can provide users with access to rare and out-of-print materials that might be difficult or impossible to locate in physical libraries.
+                Digital libraries also offer a variety of search and sorting features, as well as social media-like features that can connect users with others to discuss topics.
+                
+                As digital libraries continue to evolve, new features such as multimedia content, data visualization tools and 
+                    interactive experiences are being added to software to make digital libraries even more engaging and helpful.</p>
+        </div>
+    </section>
+    <section class="cnt_sec">
+        <div class="cnt">
+            <h1>Contact Us</h1>
+            <form >
+                <span><label class="lab_form">E-mail</label></span>
+            <span><input  class="in_form"placeholder="e-mail"></span>
+        <span><button class="cnt_btn"type="submit">Submit</button></span>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p id="foot"> &copy Vidhya</p>
+    </footer>
+    
+</body>
+</html>
